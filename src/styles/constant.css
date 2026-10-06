@@ -1,0 +1,45 @@
+.light {
+    --background: #e8f0e5;
+    --foreground: #102010;
+
+    --surface: #dce8d8;
+    --surface-dark: #b8cdb3;
+
+    --border: #50704d;
+    --border-light: #ffffff;
+    --border-dark: #30472e;
+
+    --accent: #1c8419;
+    --accent-light: #82e78e;
+
+    --title-1: #82e78e;
+    --title-2: #1c8419;
+    --title-3: #145f13;
+
+    --taskbar-1: #82e78eaa;
+    --taskbar-2: #1c841988;
+    --taskbar-3: #145f1377;
+}
+
+.dark {
+    --background: #101610;
+    --foreground: #e8f5e8;
+
+    --surface: #202820;
+    --surface-dark: #151c15;
+
+    --border: #4c684c;
+    --border-light: #819981;
+    --border-dark: #101610;
+
+    --accent: #1c8419;
+    --accent-light: #82e78e;
+
+    --title-1: #82e78e;
+    --title-2: #1c8419;
+    --title-3: #145f13;
+
+    --taskbar-1: #82e78e66;
+    --taskbar-2: #1c841966;
+    --taskbar-3: #145f1366;
+}
