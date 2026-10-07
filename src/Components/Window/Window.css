@@ -1,0 +1,151 @@
+/* WINDOW */
+
+.window {
+    flex: 1;
+
+    min-width: 0;
+    max-width: 650px;
+
+    border: 1px solid var(--border-dark);
+    border-radius: 5px 5px 0 0;
+
+    background: var(--surface);
+
+    transition:
+        transform 180ms ease,
+        box-shadow 180ms ease;
+
+    box-shadow:
+        0 8px 18px #00000055;
+}
+
+
+/* TITLE BAR */
+
+.window-header {
+    height: 38px;
+
+    border-radius: 5px 5px 0 0;
+
+    display: flex;
+    align-items: center;
+
+    position: relative;
+
+    padding: 0 0.6rem;
+
+    user-select: none;
+
+    border-bottom: 1px solid var(--border-dark);
+
+    background:
+        linear-gradient(
+            180deg,
+            var(--title-1) 0%,
+            var(--title-2) 48%,
+            var(--title-3) 100%
+        );
+
+    box-shadow:
+        inset 0 1px 0 #ffffff88;
+}
+
+.window-header p {
+    position: absolute;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    color: #ffffff;
+
+    font-size: 0.85rem;
+    font-weight: bold;
+
+    text-shadow:
+        0 1px 2px #000000aa;
+}
+
+
+/* WINDOW BUTTON */
+
+.window-buttons {
+    display: flex;
+
+    margin-left: auto;
+}
+
+.window-buttons span {
+    width: 25px;
+    height: 23px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #ffffff88;
+    border-radius: 2px;
+
+    background:
+        linear-gradient(
+            180deg,
+            #82e78ecc,
+            #1c8419
+        );
+
+    color: #ffffff;
+
+    font-size: 0.8rem;
+    font-weight: bold;
+
+    text-shadow:
+        0 1px 2px #000000aa;
+
+    box-shadow:
+        inset 0 1px 0 #ffffff66;
+}
+
+.window-logo {
+    position: absolute;
+
+    left: -2px;
+    bottom: -15px;
+
+    width:  80px;
+    height: 80px;
+
+    object-fit: contain;
+
+    z-index: 2;
+
+    transition:
+        transform 180ms ease;
+
+    filter:
+        drop-shadow(0 3px 3px #00000066);
+}
+
+
+/* WINDOW CONTENT */
+
+.window-content {
+    min-height: 350px;
+
+    padding: 2rem;
+
+    background: var(--surface);
+}
+
+.window-text h2 {
+    margin-bottom: 0.75rem;
+
+    font-size: 2rem;
+}
+
+.window-text p {
+    max-width: 400px;
+
+    line-height: 1.6;
+
+    opacity: 0.75;
+}

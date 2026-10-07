@@ -1,5 +1,5 @@
-import "./Hero.css"
-import logo from "../../assets/logo.svg"
+import "./Hero.css";
+import Window from "../Window/Window";
 
 function Hero() {
     return (
@@ -21,33 +21,18 @@ function Hero() {
                         <button>Download</button>
                     </div>
                 </div>
-                <div className="window">
-                                    <div className="window-header">
-                                        <img
-                                            className="window-logo"
-                                            src={logo}
-                                            alt="Jadidi"
-                                        />
-                
-                                        <p>Jadidi</p>
-                
-                                        <div className="window-buttons">
-                                            <span>×</span>
-                                        </div>
-                                    </div>
-                
-                                    <div className="window-content">
-                                        <div className="window-text">
-                                            <h2>Build your game.</h2>
-                
-                                            <p>
-                                                Create scenes, control objects with
-                                                Lua, and build your 2D game with
-                                                Jadidi.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
+
+                <Window>
+                    <div className="window-text">
+                        <h2>Build your game.</h2>
+
+                        <p>
+                            Create scenes, control objects with
+                            Lua, and build your 2D game with
+                            Jadidi.
+                        </p>
+                    </div>
+                </Window>
             </div>
         </section>
     );

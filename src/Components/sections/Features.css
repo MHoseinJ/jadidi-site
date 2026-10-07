@@ -1,0 +1,147 @@
+.features {
+    min-height: 100vh;
+
+    padding: 8rem 6% 10rem;
+}
+
+.features-heading {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto 7rem;
+}
+
+.features-heading p {
+    margin-bottom: 0.5rem;
+
+    font-size: 0.75rem;
+    font-weight: bold;
+
+    letter-spacing: 0.15em;
+
+    color: var(--accent-light);
+}
+
+.features-heading h2 {
+    font-size: clamp(3rem, 7vw, 6rem);
+
+    line-height: 0.9;
+
+    text-shadow:
+        0 2px 0 var(--border-dark),
+        0 4px 10px #00000055;
+}
+
+.features-list {
+    display: flex;
+    flex-direction: column;
+
+    gap: 9rem;
+}
+
+
+/* SHOWCASE */
+
+.feature-showcase {
+    min-height: 300px;
+
+    padding: 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature-showcase pre {
+    width: 100%;
+
+    padding: 1.5rem;
+
+    overflow-x: auto;
+
+    border: 1px solid var(--border);
+
+    background: var(--surface-dark);
+
+    color: var(--accent-light);
+
+    font-family: monospace;
+    font-size: 0.85rem;
+
+    line-height: 1.7;
+}
+
+
+/* COMPONENT SHOWCASE */
+
+.component-showcase {
+    flex-direction: column;
+    align-items: stretch;
+
+    gap: 0.5rem;
+}
+
+.component-showcase p {
+    margin-bottom: 0.5rem;
+
+    font-weight: bold;
+
+    color: var(--accent-light);
+}
+
+.component-showcase span {
+    padding: 0.55rem 0.75rem;
+
+    border: 1px solid var(--border);
+
+    background: var(--surface-dark);
+
+    font-family: monospace;
+}
+
+
+/* PHYSICS */
+
+.physics-showcase {
+    position: relative;
+
+    min-height: 300px;
+
+    overflow: hidden;
+}
+
+.physics-box {
+    width: 55px;
+    height: 55px;
+
+    position: absolute;
+
+    top: 70px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    border: 2px solid var(--accent-light);
+
+    background: var(--accent);
+}
+
+.physics-ground {
+    width: 70%;
+
+    height: 12px;
+
+    position: absolute;
+
+    bottom: 55px;
+    left: 15%;
+
+    border: 1px solid var(--border-dark);
+
+    background:
+        linear-gradient(
+            180deg,
+            var(--surface),
+            var(--surface-dark)
+        );
+}
